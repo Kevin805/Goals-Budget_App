@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Get it Done</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <link rel="stylesheet" href="goals.css">
+  
+    <link rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="app-container">
+        <div class="header-div">
+            <div class="title-div">
+                <span class="title">2021 Goals Checklist </span>
+            </div>
+        </div>
+
+            <div class="feature-div">
+                <span class="feature-title"></span>
+                <div class="feature-text">
+                    
+                </div>
+            </div>
+            
+            <section id="navigation">
+                <a href="goals.html" class="header-links" id="goals-link">2021 Goals</a>
+                <a href="budget.html" class="header-links" id="budget-link">Monthly Budget</a>
+                <a href="index.html" class="header-link" id="home-link">Home</a>
+              </section>
+            
+        <div class="content-div">
+            <div class="todo-create-div">
+                <input id="toggle-all-btn" class="hide" type="checkbox" onclick="controller.toggleAll()">
+                <input id="create-todo-input" type="text" placeholder="" onkeyup="controller.createTodoEntered()">
+                <button id="create-todo-btn" class="hide" onclick="controller.createTodo()">+</button>
+                <div id="alert-box"></div>
+            </div>
+            <div class="todos-view-box">
+                <br>
+                <ul></ul>
+            </div>
+        </div>
+        
+        <div class="spacer"></div>
+    </div>
+    <script src="goals.js"></script>
+</body>
+
+</html>

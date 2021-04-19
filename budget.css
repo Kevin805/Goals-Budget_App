@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.app-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+.title-div {
+    margin: .25vw;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: rgb(127, 181, 133);
+    text-align: center;
+}
+
+.title-div .title {
+    color:  rgb(255, 255, 255);
+    font-size:2rem;
+    font-weight: 100;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex__column {
+    flex-direction: column;
+}
+
+.flex__center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex__between {
+    justify-content: space-between;
+}
+
+a, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+input {
+    border: none;
+    border-bottom: solid 2px grey;
+    width: 8rem;
+    padding: .3rem;
+    padding-top: 1rem;
+    margin: 1em;
+}
+
+
+#income-amount {
+    background-color: transparent;
+    border-bottom: solid 2px rgb(70, 69, 69);
+    padding-top: 3rem;
+}
+
+input:focus, #income-amount:focus {
+    outline: none;
+    border-color: black;
+}
+
+button {
+    background-color: rgb(127, 181, 133);
+    border: 2px solid rgb(127, 181, 133);
+    border-radius: .5rem;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.404);
+    color: white;
+    cursor: pointer;
+    font-size: .9rem;
+    margin: .5rem;
+    margin-left: 0;
+    padding: .5rem;
+}
+
+.btn--ghost {
+    background-color: white;
+    border: 2px solid rgb(75, 171, 126);
+    color: rgb(104, 3, 3);
+}
+
+button:hover, .add-category:hover {
+    transform: translate(.2rem, -.05rem);
+    transform: scale(1.05, 1.05);
+}
+
+.btn--ghost:hover {
+    background-color: rgb(98, 146, 155);
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    filter: opacity(43%);
+}
+
+.no-budget {
+    text-align: center;
+    margin: 1rem;
+}
+
+.no-budget p, .display__income-balance, .display__budget-sum {
+    margin-bottom: 1rem;
+}
+
+.add-category {
+    border-radius: 0;
+    margin: 1rem;
+    margin-left: 0;
+    width: 10rem;
+}
+
+.placeholder {
+    color: rgb(44, 43, 43);
+}
+
+.budget {
+    padding: 1rem;
+}
+
+.budget-category, .display-category {
+    border: 2px solid white;
+    box-shadow: 0px 2px 5px 1px gray;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    min-width: 40%;
+}
+
+.budget-category input {
+    width: 4rem;
+}
+
+.income-balance {
+    margin-bottom: 1rem;
+}
+
+.display-budget h2 {
+    margin-bottom: .5rem;
+}
+
+.display-category p {
+    margin-bottom: .5rem;
+}
+
+.delete-options {
+    text-align: center;
+}
+
+.delete-options p {
+    margin: 1rem;
+}
+
+
+.hide {
+    display: none;
+}
+
+@media all and (max-width: 480px) {
+    .budget-category {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header-links {
+    display: center;
+    margin: 10px;
+    padding: 10px 0;
+}
