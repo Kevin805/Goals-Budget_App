@@ -146,20 +146,20 @@ button:disabled {
 }
 
 .budget-category, .display-category {
-    border: 2px solid white;
-    box-shadow: 0px 2px 5px 1px gray;
+    border: 2px solid rgb(252, 243, 243);
+    box-shadow: 0px 2.5px 5.2px 1px gray;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     padding: 1rem;
-    min-width: 40%;
+    min-width: 45%;
 }
 
 .budget-category input {
-    width: 4rem;
+    width: 3.5rem;
 }
 
 .income-balance {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .display-budget h2 {
